@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../Screens/home.dart';
+import '../Screens/field_bar.dart';
 import '../Screens/statistics.dart';
 
 class MainPage extends StatefulWidget {
@@ -13,7 +14,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int index_color = 0;
-  List Screen = [HomePage(), Statistics(), HomePage(), Statistics()];
+  List Screen = [HomePage(), Statistics(), FieldList(), Statistics()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
